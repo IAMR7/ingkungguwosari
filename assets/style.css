@@ -211,7 +211,8 @@ div#layanan .container {
 }
 
 div#layanan .container img.mockup-layanan {
-    width: 100%;
+    width: 30%;
+    height: 50%;
     margin-bottom: 50px;
 }
 
