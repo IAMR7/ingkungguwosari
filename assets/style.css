@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1.heading {
+    margin-top: 40px;
+    color: #c57854;
+    font-family: 'viga', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+h1.heading::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #a8a8a8;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    opacity: 20%;
+}
+
+a.tombol {
+    background-color: #c57854;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 15px;
+    width: 150px;
+    font-family: 'quicksand';
+}
+
+a.tombol:hover {
+    background-color: rgb(146, 71, 30);
+}
+
+p {
+    font-family: 'quicksand';
+}
+
+p,h3,h5 {
+    color: rgb(92, 92, 92);
+    text-align: justify;
+}
+
+/* navbar */
+.navbar {
+    background-color: #c57854;
+}
+
+.logo {
+    width: 40px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+a.navbar-brand {
+    color: white !important;
+    font-family: 'viga', arial;
+    display: none;
+}
+
+a.nav-link {
+    color: white !important;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'quicksand', arial;
+}
+
+a.nav-link:hover {
+    border-bottom: 3px solid rgb(253, 182, 100);
+}
+
+.navbar-toggler {
+    border-color: transparent !important;
+}
+
+.icon {
+    color: white;
+}
+
+.active {
+    font-weight: bold;
+}
+
+div.navbar-nav a.btn {
+    background-color: rgba(255,186,107,1);
+    border: none;
+    font-size: 13px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+/* jumbotron */
+div.jumbotron.atas {
+    background: linear-gradient(3deg, rgba(255,186,107,1) 0%, rgba(197,120,84,1) 66%);
+    height: 480px;
+}
+
+div.jumbotron.atas .container {
+    margin-top: 60px;
+}
+
+.text-hero {
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'viga';
+    
+    font-size: 20px;
+}
+
+ul.download-on {
+    text-align: center;
+}
+
+ul.download-on li {
+    display: inline-block;
+    margin-top: -50px;
+}
+
+li.playstore {
+    margin-bottom: -50px;
+}
+
+.mockup {
+    width: 100%;
+}
+
+/* about */
+div#about .content-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#about .content-about-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img.about-image-1 {
+    width: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 20px;
+}
+
+img.about-image-2 {
+    width: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 20px;
+}
+
+div.about-items-2 h3, div.about-items-2 p {
+    padding-bottom: 10px;
+}
+
+a.tombol-about-1 {
+    margin-bottom: 60px;
+}
+
+/* fitur */
+div#fitur .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#fitur .container .content-fitur {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 100px;
+    margin: 30px auto;
+}
+
+div#fitur .container .content-fitur img {
+    width: 80px;
+    padding-right: 10px;
+}
+
+div.text-content-fitur p {
+    font-size: 15px;
+}
+
+/* layanan */
+div#layanan .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div#layanan .container img.mockup-layanan {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+div.text-layanan {
+    width: 550px;
+}
+
+div.content-layanan {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+div.content-layanan img {
+    width: 110px;
+    padding-right: 30px;
+}
+
+/* CTA */
+div#cta div.jumbotron {
+    min-height: 100px;
+    background-image: url('/assets/img/cta-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+div#cta div.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+div#cta div.jumbotron .container h3, div#cta div.jumbotron .container p {
+    color: white;
+}
+
+div#cta div.jumbotron::after {
+    content: '';
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 80%;
+}
+
+/* footer */
+footer.footer {
+    background: linear-gradient(3deg, rgba(255,186,107,1) 0%, rgba(197,120,84,1) 66%);
+    height: 630px;
+    margin-top: -35px;
+}
+
+footer.footer div.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer div.container div.content-footer img {
+    width: 25%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+footer div.container div.content-footer div.text-content-footer h6, footer div.container div.content-footer div.text-content-footer p {
+    color: white;
+}
+
+footer div.container div.content-footer div.text-content-footer p {
+    font-size: 13px;
+}
+
+footer div.container div.content-footer {
+    display: flex;
+    width: 300px;
+}
+
+footer div.container div.nav-footer {
+    width: 300px;
+    margin-top: 20px;
+}
+
+footer div.container div.nav-footer h6 {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+footer div.container div.nav-footer ul.nav-2 li {
+    list-style-type: none;
+    text-align: left;
+}
+
+footer div.container div.nav-footer ul.nav-3 li {
+    list-style-type: none;
+    text-align: left;
+}
+
+footer div.container div.nav-footer ul li a {
+    color: white;
+    font-family: 'quicksand';
+    font-size: 13px;
+}
+
+p.copyright {
+    color: white;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+/* IPAD */
+@media (min-width: 768px) {
+    h1.heading {
+        margin-top: 120px;
+    }
+
+    footer div.container div.content-footer img {
+        height: 50%;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    h1.heading {
+        margin-top: 80px;
+    }
+
+    /* navbar */
+    .navbar {
+        background: linear-gradient(90deg, rgba(255,186,107,1) 0%, rgba(197,120,84,1) 66%);
+    }
+
+    a.navbar-brand {
+        color: white !important;
+        font-family: 'viga', sans-serif;
+        display: contents;
+    }
+
+    .active {
+        border-bottom: 3px solid rgb(253, 182, 100);
+    }
+
+    a.nav-link {
+        margin-right: 35px;
+        font-size: 13px;
+    }
+
+    /* jumbotron */
+    div.jumbotron.atas {
+        background: linear-gradient(90deg, rgba(255,186,107,1) 0%, rgba(197,120,84,1) 66%);
+        height: 430px;
+    }
+
+    .text-hero {
+        color: white;
+        font-weight: 100;
+        text-align: left;
+        font-size: 40px;
+    }
+
+    ul.download-on {
+        text-align: justify;
+    }
+
+    ul.download-on li {
+        display: inline-block;
+        margin-top: -30px;
+    }
+
+    /* about */
+    div#about div.content-about {
+        margin-top: 50px;
+    }
+
+    div#about div.content-about-2 {
+        margin-top: 50px;
+    }
+
+    img.about-image-1 {
+        width: 90%;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    img.about-image-2 {
+        width: 95%;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    div.about-items-2 h3, div.about-items-2 p {
+        padding-bottom: 15px;
+    }
+
+    div.content-about div.about-items-1 {
+        flex: 4;
+    }
+    
+    div.content-about div.about-items-2 {
+        flex: 5;
+    }
+
+    div.content-about-2 div.about-items-1 {
+        flex: 4;
+        margin-left: 50px;
+    }
+    
+    div.content-about-2 div.about-items-2 {
+        flex: 5;
+    }
+
+    /* layanan */
+    div#layanan .container img.mockup-layanan {
+        width: 35%;
+        margin-bottom: 0;
+    }
+
+    /* CTA */
+    div#cta div.jumbotron {
+        background-position-y: -200px;
+    }
+
+    /* footer */
+    footer.footer {
+        height: 300px;
+        background: linear-gradient(90deg, rgba(255,186,107,1) 0%, rgba(197,120,84,1) 66%);
+    }
+
+    footer div.container div.content-footer img {
+        height: 45%;
+    }
+
+    footer div.container div.nav-footer h6 {
+        text-align: center;
+    }
+
+    footer div.container div.nav-footer {
+        margin-top: 0;
+    }
+
+    footer div.container div.nav-footer ul.nav-2 li {
+        text-align: center;
+    }
+
+    footer div.container div.nav-footer ul.nav-3 li {
+        text-align: right;
+    }
+
+    footer div.container div.nav-footer h6.footer-produk-unggulan {
+        text-align: right;
+    }
+}
